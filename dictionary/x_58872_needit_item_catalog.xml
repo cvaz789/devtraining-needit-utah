@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8f8451e7470282101309a464116d43de" label="Item Catalog" max_length="40" name="x_58872_needit_item_catalog" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element display="true" label="Item Id" max_length="40" name="u_itc_id" type="string"/>
+        <element label="Item Name" max_length="40" name="u_itc_name" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Item Provider" max_length="32" name="u_itc_pct" reference="x_58872_needit_provider_catalog" type="reference"/>
+        <index name="index">
+            <element name="u_itc_pct"/>
+        </index>
+    </element>
+</database>

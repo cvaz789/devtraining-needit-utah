@@ -2,6 +2,10 @@
     <element audit="true" db_object_id="c3ce9c3f473102101309a464116d4383" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
         <element label="New field 1" max_length="40" name="new_field_1" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element label="Payable to" max_length="40" name="u_payable" read_only="true" type="string"/>
+        <element label="Contact" max_length="40" name="u_pct_contact" read_only="true" type="string"/>
+        <element display="true" label="Item" max_length="40" name="u_pct_itemid" reference="x_58872_needit_item_catalog" type="reference"/>
+        <element label="Provider" max_length="32" name="u_provider" reference="x_58872_needit_provider_catalog" type="reference"/>
         <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>

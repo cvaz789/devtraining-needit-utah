@@ -29,8 +29,9 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	// Add your code here
-
+	
+	//DIRECT CALCULATION
+	/*	
 	var currentDateTime = new GlideDateTime();
 	var	currentDate = currentDateTime.getDate();
 	var targetDateTime = new GlideDateTime(current.u_when_needed);
@@ -45,6 +46,21 @@
 		current.u_when_needed.setValue();
 		current.setAbortAction(true);
 	}
+	*/
+
+	//SCRIPT INCLUDE CALCULATION
+
+	var needitutils = new NeedItUtils();
+	var dateCalc = needitutils.dateCalc(current.u_when_needed);
+
+	
+	if(dateCalc == true) {
+		gs.addErrorMessage('No past date or same day orders are supported. Select a future date.');
+		current.u_when_needed.setValue();
+		current.setAbortAction(true);
+	}
+
+
 
 	
 	
@@ -58,7 +74,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>175ae85f470a02101309a464116d4388</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>NeedIt Date Validations</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -66,7 +82,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_175ae85f470a02101309a464116d4388</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-13 22:54:00</sys_updated_on>
+        <sys_updated_on>2024-05-15 19:40:48</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

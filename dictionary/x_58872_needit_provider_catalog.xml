@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2dc9012b47ce42101309a464116d4344" label="Provider Catalog" max_length="40" name="x_58872_needit_provider_catalog" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Service Type" max_length="40" name="service_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Flooring" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Wall" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Pumbling" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Electrical" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element label="Account Number" max_length="200" name="u_pct_acc" type="string"/>
+        <element choice="1" label="Bank" max_length="200" name="u_pct_bank" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="BBVA" value="3"/>
+                <element inactive_on_update="false" label="Citi" value="1"/>
+                <element inactive_on_update="false" label="First Bank" value="2"/>
+                <element inactive_on_update="false" label="Santander" value="4"/>
+            </choice>
+        </element>
+        <element label="City" max_length="100" name="u_pct_city" type="string"/>
+        <element label="Contact" max_length="200" name="u_pct_contact" type="string"/>
+        <element display="true" label="Name" max_length="200" name="u_pct_name" type="string"/>
+        <element label="Zip Code" max_length="10" name="u_pct_pc" type="string"/>
+        <element label="State" max_length="100" name="u_pct_state" type="string"/>
+    </element>
+</database>
