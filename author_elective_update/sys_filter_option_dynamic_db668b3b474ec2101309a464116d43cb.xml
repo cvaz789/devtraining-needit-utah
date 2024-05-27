@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_filter_option_dynamic">
+    <sys_filter_option_dynamic action="DELETE">
+        <active>true</active>
+        <available_for_default>false</available_for_default>
+        <available_for_filter>false</available_for_filter>
+        <available_for_ref_qual>true</available_for_ref_qual>
+        <field_type display_value="Reference">52a227c1bf3320001875647fcf07396a</field_type>
+        <label>Get Selected Provider</label>
+        <order/>
+        <roles/>
+        <script>current.addQuery('u_provider', current.u_provider);</script>
+        <script_reference_id/>
+        <script_reference_table/>
+        <sys_class_name>sys_filter_option_dynamic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-15 20:40:41</sys_created_on>
+        <sys_id>db668b3b474ec2101309a464116d43cb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Get Selected Provider</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_filter_option_dynamic_db668b3b474ec2101309a464116d43cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-15 20:50:54</sys_updated_on>
+        <table>x_58872_needit_item_catalog</table>
+        <table_containing_filter/>
+    </sys_filter_option_dynamic>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>9d70c3e21bdefdd0c8432f8dee4bcb1c</instance_id>
+        <instance_name>dev207191</instance_name>
+        <name>sys_filter_option_dynamic_db668b3b474ec2101309a464116d43cb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_filter_option_dynamic"><sys_filter_option_dynamic action="INSERT_OR_UPDATE"><active>true</active><available_for_default>false</available_for_default><available_for_filter>false</available_for_filter><available_for_ref_qual>true</available_for_ref_qual><field_type display_value="Reference">52a227c1bf3320001875647fcf07396a</field_type><label>Get Selected Provider</label><order/><roles/><script>current.addQuery('u_provider', current.u_provider);</script><script_reference_id/><script_reference_table/><sys_class_name>sys_filter_option_dynamic</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-15 20:40:41</sys_created_on><sys_id>db668b3b474ec2101309a464116d43cb</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Get Selected Provider</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_filter_option_dynamic_db668b3b474ec2101309a464116d43cb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-15 20:50:54</sys_updated_on><table>x_58872_needit_item_catalog</table><table_containing_filter/></sys_filter_option_dynamic></record_update>]]></payload>
+        <payload_hash>1221910664</payload_hash>
+        <record_name>Get Selected Provider</record_name>
+        <reverted_from/>
+        <source>e14e58bb473102101309a464116d43a1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-15 20:50:54</sys_created_on>
+        <sys_id>8d89873f474ec2101309a464116d4352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f7e05b53c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-15 20:50:54</sys_updated_on>
+        <type>Dynamic Filter Options</type>
+        <update_guid>0589873f8a4ec210bafd1895fe88e052</update_guid>
+        <update_guid_history>0589873f8a4ec210bafd1895fe88e052:1221910664,9fb8473f464ec2105119db38098f1930:-1425096740,7c58833ff14ec210abbd0143e9a34090:294107878,9b270fbb3f4ec210fa623715bf25d7df:1221910664</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-15 21:07:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_filter_option_dynamic">sys_filter_option_dynamic</sys_db_object>
+        <sys_id>8fba5c0dc2d746b2966fd75d90f83fc4</sys_id>
+        <sys_metadata>db668b3b474ec2101309a464116d43cb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Selected Provider</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="Item Catalog">8f8451e7470282101309a464116d43de</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_filter_option_dynamic_db668b3b474ec2101309a464116d43cb</sys_update_name>
+        <sys_update_version display_value="sys_filter_option_dynamic_db668b3b474ec2101309a464116d43cb">8d89873f474ec2101309a464116d4352</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-15 21:07:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
